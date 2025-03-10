@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>实验室预约系统</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- 预约信息 -->
+        <div class="group-box">
+            <h2>预约信息</h2>
+            <div class="form-group">
+                <label for="lab-name">实验室名称：</label>
+                <select id="lab-name" class="form-control">
+                    <option value="化学实验室-A101">化学实验室-A101</option>
+                    <option value="物理实验室-B203">物理实验室-B203</option>
+                    <option value="生物实验室-C305">生物实验室-C305</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="date">预约日期：</label>
+                <input type="date" id="date" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="time">预约时间：</label>
+                <input type="time" id="time" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="name">姓　　名：</label>
+                <input type="text" id="name" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="student-id">学　　号：</label>
+                <input type="text" id="student-id" class="form-control">
+            </div>
+        </div>
+
+        <!-- 预约记录 -->
+        <div class="group-box">
+            <h2>预约记录</h2>
+            <table id="reservation-table" class="table">
+                <thead>
+                    <tr>
+                        <th>预约人</th>
+                        <th>学号</th>
+                        <th>实验室</th>
+                        <th>日期</th>
+                        <th>时间</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- 预约记录将通过 JavaScript 动态添加 -->
+                </tbody>
+            </table>
+        </div>
+
+        <!-- 提交按钮 -->
+        <button id="submit-button" class="btn">提交预约</button>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
